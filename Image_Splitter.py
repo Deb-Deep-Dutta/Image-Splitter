@@ -1,3 +1,7 @@
+"""
+Image Splitter Program
+Author: Deb Deep Dutta
+"""
 from PIL import Image
 import os
 import tkinter as tk
