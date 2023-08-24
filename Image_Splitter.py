@@ -5,9 +5,13 @@ Author: Deb Deep Dutta
 from PIL import Image
 import os
 import tkinter as tk
-from tkinter import filedialog, simpledialog
+from tkinter import filedialog, simpledialog, messagebox
 import zipfile
 import math
+
+# Display a message when the executable is run
+message = "Image Splitter Program\nCreated by: Deb Deep Dutta"
+messagebox.showinfo("Welcome! Hope My Progam Helps!", message)
 
 def split_image(image, num_slices, output_directory):
     slice_height = math.ceil(image.height / num_slices)  # Calculate slice height to evenly split the image
